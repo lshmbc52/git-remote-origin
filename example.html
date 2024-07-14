@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // document.addEventListener('DOMContentLoaded',() => {
+        // const header1 = document.querySelector('#textContent')
+        // const header2 = document.querySelector('#innerHTML')
+
+        // console.log(header1.textContent)
+        // console.log(header2.innerHTML)
+
+        // header1.textContent= "원하는<br> 문자열"
+        // header2.innerHTML= "원하는<br>문자열"
+        
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     const img = document.querySelector('img')
+        //    // img.setAttribute('src','http://placekitten.com/200/200')
+        //    img.src ='http://placekitten.com/300/300'
+        //     //console.log(img.getAttribute('src'))
+        //     console.log(img.src)
+
+        // document.addEventListener("DOMContentLoaded",()=> {
+        //     const divs = document.querySelectorAll('div')
+        //     divs.forEach ((div,key) => {
+        //         div.style.backgroundColor = `rgb(${key*25.5}, ${key*25.5},${key*25.5})`
+        //         div.style.height ='10px'
+        //         div.style['background-color']
+        //         console.log(div.style.height)
+
+        // document.addEventListener("DOMContentLoaded", ()=> {
+        //     const header = document.createElement('h1')
+        //     header.textContent = "createElement로 만든 태그"
+        //     header.style.color = 'red'
+        //     const body = document.querySelector('body')
+        //     body.appendChild(header)
+
+        //     setTimeout(()=> {
+        //         // body.removeChild(header)
+        //         header.parentNode.removeChild(header)
+        //     },2000)
+        //     // body.removeChild(header)
+
+        // document.addEventListener("DOMContentLoaded", ()=> {
+        //     const header = document.createElement('h2')
+        //     header.textContent="안녕하세요"
+
+        //     const first = document.querySelector('.first')
+        //     const second = document.querySelector('.second')
+
+        //     first.appendChild(header)
+        //     // setTimeout(() => {
+        //     //     second.appendChild(header)
+        //     // },2000)
+
+        //     const toFirst =()=> {
+        //         first.appendChild(header)
+        //         setTimeout(toSecond,1000)
+        //     }
+        //     const toSecond =()=> {
+        //         second.appendChild(header)
+        //         setTimeout(toFirst,1000)
+        //     }
+        //     toFirst()
+
+        // })
+        document.addEventListener("DOMContentLoaded",()=> {
+            const header = document.createElement('h1')
+            document.body.appendChild(header)
+            
+            let count = 0
+            header.style.userSelect ='none'
+            header.innerText = `클릭횟수:${count}`
+            header.addEventListener('click',()=> {
+                count ++
+                header.innerText =`클릭횟수:${count}`
+            })
+        }) 
+        
+
+           
+
+
+      
+       
+        
+     </script>
+        
+</head>
+<body>
+   //<img src="" alt="">
+   <!-- <div class = 'first'>
+    <h1>첫번째 div 태그 내부</h1>
+   </div>
+   <hr>
+   <div class="second">
+    <h1>두번째 div 태그 내부</h1>
+   </div> -->
+
+    
+</body>
+</html>
